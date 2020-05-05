@@ -1,6 +1,5 @@
 import xlrd
 import datetime
-from tabulate import tabulate
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
@@ -61,7 +60,7 @@ plt.ylabel("Score", rotation=0)
 # Table for warriors
 
 warriors_table = plt.subplot2grid((3,4),(2,2), colspan=2)
-warriors_table.table(cellText=[first_half_warriors],rowLabels=['Warriors'],colLabels=date_warriors)
+warriors_table.table(cellText=[first_half_warriors],rowLabels=['Warriors'],colLabels=date_warriors,fontsize=50)
 warriors_table.axis("off")
 
 fig.set_size_inches(w=60, h=30)
